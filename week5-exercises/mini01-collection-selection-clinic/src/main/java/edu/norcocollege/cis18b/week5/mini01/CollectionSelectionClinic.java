@@ -36,5 +36,15 @@ public class CollectionSelectionClinic {
         }
 
         // TODO: Add one more scenario from your own domain and justify the choice.
+
+        new Scenario(("Leadeboard Sorting"), "Set", "Unique elements sorted automatically", "TreeSet");
+
+        for (Scenario scenario : scenarios) {
+            System.out.println("Scenario: " + scenario.name);
+            System.out.println("Best choice: " + scenario.bestChoice);
+            System.out.println("Why: " + scenario.why);
+            System.out.println("Implementation hint: " + scenario.implementationHint);
+            System.out.println();
+        }
     }
 }
