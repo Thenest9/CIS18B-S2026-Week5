@@ -27,4 +27,9 @@ public class Playlist implements Iterable<PlaylistItem> {
     }
 
     // TODO: Add a third traversal strategy for the extension challenge.
+    public Iterator<PlaylistItem> reverseOrder() {
+        List<PlaylistItem> reverseSorted = new ArrayList<>(items);
+        reverseSorted.sort(Comparator.comparing(PlaylistItem::getTitle).reversed());
+        return reverseSorted.iterator();
+    }
 }

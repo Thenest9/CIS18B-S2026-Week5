@@ -16,6 +16,8 @@ public class PlaylistDemo {
         System.out.println("Priority order: " + titles(playlist.priorityIterator()));
 
         // TODO: Add a brief reflection in your submission about when built-in iteration would be enough.
+        //it is ideal when performing read-only operations such as printing, summing, or looking for a value,
+        //it is also ideal for you do not need to remove items while looping
     }
 
     static List<String> titles(Iterator<PlaylistItem> iterator) {
